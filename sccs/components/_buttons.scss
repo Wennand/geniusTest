@@ -1,0 +1,16 @@
+.button {
+    color: var(--color-primari-light);
+    border-radius: 8px;
+    border: 2px solid var(--color-brand-normal);
+    background: var(--color-brand-normal);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--color-brand-dark);
+    background-color: var(--color-primari-light);
+}
