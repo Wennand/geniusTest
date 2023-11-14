@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sccs/main.css" />
   </head>
   <body>
     <header class="header">
@@ -20,16 +14,16 @@
             <a href=""><img src="./images/logo.svg" alt="logo" /></a>
             <ul class="header-menu">
               <li>
-                <a href="#tradition-section" class="nav-link">Наші традиції</a>
+                <a href="#tradition-section" class="link">Наші традиції</a>
               </li>
               <li>
-                <a href="#chefs-section" class="nav-link">Шеф-кухарі</a>
+                <a href="#chefs-section" class="link">Шеф-кухарі</a>
               </li>
               <li>
-                <a href="#formats-section" class="nav-link">Формати</a>
+                <a href="#formats-section" class="link">Формати</a>
               </li>
               <li>
-                <a href="#contact-section" class="nav-link">Контакти</a>
+                <a href="#contact-section" class="link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -141,6 +135,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/walrus-format.jpg"
+                    alt=""
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <p class="format-text">
                     Площа: до 120 м2 Меню: розширене меню Штат: 2
@@ -151,6 +150,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe-format.jpg"
+                    alt="Horseshoe"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <p class="format-text">
                     Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
@@ -161,6 +165,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar-format.jpg"
+                    alt="Handlebar"
+                  />
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <p class="format-text">
                     Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
@@ -197,6 +206,7 @@
                     id="user-name"
                     class="user-name"
                     placeholder="Ім’я"
+                    required
                   />
                 </div>
 
@@ -210,6 +220,7 @@
                     id="user-tel"
                     class="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -223,9 +234,9 @@
                     id="user-email"
                     class="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
-
                 <button class="form-button button" type="submit">
                   Замовити дзвінок
                 </button>
@@ -259,16 +270,16 @@
           </div>
           <ul class="footer-menu">
             <li>
-              <a href="#tradition-section" class="nav-link">Наші традиції</a>
+              <a href="#tradition-section" class="link">Наші традиції</a>
             </li>
             <li>
-              <a href="#chefs-section" class="nav-link">Шеф-кухарі</a>
+              <a href="#chefs-section" class="link">Шеф-кухарі</a>
             </li>
             <li>
-              <a href="#formats-section" class="nav-link">Формати</a>
+              <a href="#formats-section" class="link">Формати</a>
             </li>
             <li>
-              <a href="#contact-section" class="nav-link">Контакти</a>
+              <a href="#contact-section" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -380,7 +391,8 @@
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь з
             <a class="form-terms-link" href="#" target="_blank"
-              >політикою конфіденційності</a>
+              >політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
