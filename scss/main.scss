@@ -1,14 +1,14 @@
 @import './utils/fonts';
-
 @import './utils/variables';
-
 @import './base';
-
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/mixins';
 @import './layouts/container';
 
 @import './layouts/section';
 
-@import './utils/utils';
+@import './layouts/mobile-menu';
 
 @import './components/buttons';
 
@@ -24,25 +24,13 @@
 
 @import './layouts/chef-section';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import './components/input';
 
 @import './components/chef-card';
 
 @import './layouts/formats-section';
 
-
+@import './components/pagination';
 @import './components/format-card';
 
 /*.format-accent {
@@ -56,17 +44,9 @@
 
 @import './layouts/contact-section';
 
-
-
-
-
 @import './layouts/footer';
-
-
 
 @import './layouts/modal';
 
-
-
-@import './layouts/forms';
+@import './layouts/form-terms';
 

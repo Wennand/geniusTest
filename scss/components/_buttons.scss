@@ -1,15 +1,14 @@
 .button {
-    color: var(--color-primari-light);
-    border-radius: 8px;
-    border: 2px solid var(--color-brand-normal);
-    background: var(--color-brand-normal);
-    display: flex;
+    display: block;
     padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
+    color: var(--color-primari-light);
+    font-weight: 600;
+    background: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
+    border-radius: 8px;
     cursor: pointer;
 }
-
+    
 .button:hover {
     color: var(--color-brand-dark);
     background-color: var(--color-primari-light);

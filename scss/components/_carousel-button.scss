@@ -11,13 +11,17 @@
     border: 1px solid var(--color-primari-dark);
     border-radius: 50%;
     cursor: pointer;
+    
+    &:hover {
+        background-color: var(--color-primari-dark);
+        fill: var(--color-primari-light);
+    }
+
+    &.next {
+        transform: rotate(180deg);
+    }
+
 }
 
-.carousel-button:hover {
-    background-color: var(--color-primari-dark);
-    fill: var(--color-primari-light);
-}
 
-.carousel-button.next {
-    transform: rotate(180deg);
-}
+

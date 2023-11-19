@@ -8,15 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px;
     transition: opacity 0.5s, visibility 0.5s;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 
 .modal {
     position: relative;
@@ -24,14 +26,27 @@
     max-width: 880px;
     height: 100%;
     max-height: 880px;
-    padding: 128px;
+    padding: 48px;
     background-color: var(--color-primari-light);
     border-radius: 32px;
     overflow-y: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 128px;
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    &__form-field {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        margin: 0 auto 24px;
+    }
 }
 
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
